@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyamli Cafeteria Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&family=Satisfy&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+    </style>
+</head>
+<body>
+      <div class="menu-container">
+    <div class="menu-card">
+
+        <header class="menu-card-header">
+            <img src="https://i.imgur.com/Z9rPxj1.png" alt="Shyamli Cafeteria Logo" style="width: 250px; height: 250px; margin-right: 10px;">
+            <h1 style>Shyamli Cafeteria</h1>
+            <h2 style>DIGITAL MENU CARD</h2>
+        </header>
+       <div class="garland">
+        <img class="garland-image" src="https://i.imgur.com/QQSBdPV.png" alt="Garland 1">
+        <!-- Add more garland images as needed -->
+    </div>
+        <main class="menu-card-body">
+ <div class="menu-section" id="sandwiches">
+    <h3 class="head-dish" onclick="toggleSubDishes('sandwiches-menu')">
+        <img src="https://i.imgur.com/zhCtwWw.png" alt="Sandwich Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">Sandwiches</span>
+    </h3>
+    <ul class="sub-dishes collapsed" id="sandwiches-menu">
+        <!-- Add sandwich dishes here -->
+        <li>
+            <img src="masala_sandwich_grilled_without_butter.png" alt="Masala Sandwich Grilled Without Butter">
+            <div class="item-details">
+                <h4 style="color: var(--van-dyke);">Masala Sandwich</h4>
+                <p style="color: var(--silver);">Masala-flavored sandwich grilled without butter. A spicy and delicious choice.</p>
+                <span class="price" style="color: var(--van-dyke);">₹60</span>
+            </div>
+        </li>
+        <!-- Add more items as needed -->
+    </ul>
+</div>
+                      
+<div class="menu-section" id="pizzas">
+    <h3 class="head-dish" onclick="toggleSubDishes('pizzas-menu')">
+        <img src="https://i.imgur.com/H4BnMZI.png" alt="Pizza Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">Pizzas</span>
+    </h3>
+    <ul class="sub-dishes collapsed" id="pizzas-menu">
+        <!-- Add pizza dishes here -->
+      <li>
+    <img src="onion_capsicum_pizza.jpg" alt="Onion Capsicum Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Onion Capsicum Pizza</h4>
+        <p style="color: var(--silver);">Delicious pizza with onion and capsicum toppings.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹150 | Large: ₹200</span>
+    </div>
+</li>
+<li>
+    <img src="onion_tomato_capsicum_pizza.jpg" alt="Onion Tomato Capsicum Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Onion Tomato Capsicum Pizza</h4>
+        <p style="color: var(--silver);">Delicious pizza with onion, tomato, and capsicum toppings.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹150 | Large: ₹200</span>
+    </div>
+</li>
+<li>
+    <img src="cheese_corn_pizza.jpg" alt="Cheese Corn Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Cheese Corn Pizza</h4>
+        <p style="color: var(--silver);">Pizza loaded with cheese and corn for a delightful taste.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹170 | Large: ₹250</span>
+    </div>
+</li>
+<li>
+    <img src="paneer_pizza.jpg" alt="Paneer Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Paneer Pizza</h4>
+        <p style="color: var(--silver);">Delicious pizza topped with flavorful paneer.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹180 | Large: ₹280</span>
+    </div>
+</li>
+<li>
+    <img src="tandoori_paneer_pizza.jpg" alt="Tandoori Paneer Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Tandoori Paneer Pizza</h4>
+        <p style="color: var(--silver);">Pizza with tandoori-flavored paneer for an exquisite taste.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹180 | Large: ₹280</span>
+    </div>
+</li>
+<li>
+    <img src="schezwan_paneer_pizza.jpg" alt="Schezwan Paneer Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Schezwan Paneer Pizza</h4>
+        <p style="color: var(--silver);">Spicy pizza with schezwan-flavored paneer topping.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹180 | Large: ₹280</span>
+    </div>
+</li>
+<li>
+    <img src="margarita_pizza.jpg" alt="Margarita Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Margarita Pizza</h4>
+        <p style="color: var(--silver);">Classic pizza with tomato, mozzarella, and basil.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹190 | Large: ₹290</span>
+    </div>
+</li>
+<li>
+    <img src="double_cheese_pizza.jpg" alt="Double Cheese Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Double Cheese Pizza</h4>
+        <p style="color: var(--silver);">Pizza overloaded with a generous amount of cheese.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹200 | Large: ₹300</span>
+    </div>
+</li>
+<li>
+    <img src="farm_villa_pizza.jpg" alt="Farm Villa Pizza">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Farm Villa Pizza</h4>
+        <p style="color: var(--silver);">Pizza with a mix of fresh vegetables for a farm-fresh taste.</p>
+        <span class="price" style="color: var(--van-dyke);">Regular: ₹250 | Large: ₹350</span>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="menu-section" id="burgers">
+    <h3 class="head-dish" onclick="showMenu('burgers-menu')">
+        <img src="https://i.imgur.com/WPYctxy.png" alt="Burger Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">Burgers</span>
+    </h3>
+    <ul class="sub-dishes" id="burgers-menu">
+        <!-- Add burger dishes here -->
+<li>
+    <img src="aloo_tikki_burger.jpg" alt="Aloo Tikki Burger">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Aloo Tikki Burger</h4>
+        <p style="color: var(--silver);">Burger with a flavorful aloo tikki patty.</p>
+        <span class="price" style="color: var(--van-dyke);">₹50</span>
+    </div>
+</li>
+ <li>
+    <img src="veg_classic_burger.jpg" alt="Veg Classic Burger">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Veg Classic Burger</h4>
+        <p style="color: var(--silver);">Classic vegetarian burger with a tasty patty.</p>
+        <span class="price" style="color: var(--van-dyke);">₹50</span>
+    </div>
+</li>
+<li>
+    <img src="veg_cheese_burger.jpg" alt="Veg Cheese Burger">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Veg Cheese Burger</h4>
+        <p style="color: var(--silver);">Burger loaded with delicious cheese.</p>
+        <span class="price" style="color: var(--van-dyke);">₹60</span>
+    </div>
+</li>
+<li>
+    <img src="veg_tandoori_burger.jpg" alt="Veg Tandoori Burger">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Veg Tandoori Burger</h4>
+        <p style="color: var(--silver);">Burger with a tandoori-flavored vegetarian patty.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+<li>
+    <img src="tandoori_paneer_burger.jpg" alt="Tandoori Paneer Burger">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Tandoori Paneer Burger</h4>
+        <p style="color: var(--silver);">Burger with tandoori-spiced paneer filling.</p>
+        <span class="price" style="color: var(--van-dyke);">₹80</span>
+    </div>
+</li>
+     
+    </ul>
+</div>
+
+<div class="menu-section" id="french-fries">
+    <h3 class="head-dish" onclick="showMenu('french-fries-menu')">
+        <img src="https://i.imgur.com/t96fi0Y.png" alt="French Fries Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">French Fries</span>
+    </h3>
+    <ul class="sub-dishes" id="french-fries-menu">
+        <!-- Add French fries dishes here -->
+<li>
+    <img src="regular_salted_fries.jpg" alt="Regular Salted Fries">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Regular Salted Fries</h4>
+        <p style="color: var(--silver);">Classic salted fries for a perfect snack.</p>
+        <span class="price" style="color: var(--van-dyke);">₹60</span>
+    </div>
+</li>
+
+<li>
+    <img src="peri_peri_fries.jpg" alt="Peri - Peri Fries">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Peri - Peri Fries</h4>
+        <p style="color: var(--silver);">Fries with a spicy peri-peri seasoning.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<li>
+    <img src="maggie_masala_fries.jpg" alt="Maggie Masala Fries">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Maggie Masala Fries</h4>
+        <p style="color: var(--silver);">Fries with the flavorful touch of Maggie masala.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<li>
+    <img src="cheesy_fries.jpg" alt="Cheesy Fries">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Cheesy Fries</h4>
+        <p style="color: var(--silver);">Fries topped with melted cheese for the ultimate indulgence.</p>
+        <span class="price" style="color: var(--van-dyke);">₹90</span>
+    </div>
+</li>
+      
+    </ul>
+</div>
+
+<div class="menu-section" id="maggi">
+    <h3 class="head-dish" onclick="showMenu('maggi-menu')">
+        <img src="https://i.imgur.com/8Kir9W1.png" alt="Maggi Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">Maggi</span>
+    </h3>
+    <ul class="sub-dishes" id="maggi-menu">
+        <!-- Add Maggi dishes here -->
+<li>
+    <img src="masala_maggi.jpg" alt="Masala Maggi">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Masala Maggi</h4>
+        <p style="color: var(--silver);">Maggi noodles with a flavorful masala twist.</p>
+        <span class="price" style="color: var(--van-dyke);">₹40</span>
+    </div>
+</li>
+<li>
+    <img src="double_masala_maggi.jpg" alt="Double Masala Maggi">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Double Masala Maggi</h4>
+        <p style="color: var(--silver);">Maggi noodles with an extra dose of masala goodness.</p>
+        <span class="price" style="color: var(--van-dyke);">₹50</span>
+    </div>
+</li>
+<li>
+    <img src="vegetable_maggi.jpg" alt="Vegetable Maggi">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Vegetable Maggi</h4>
+        <p style="color: var(--silver);">Maggi noodles loaded with fresh vegetables.</p>
+        <span class="price" style="color: var(--van-dyke);">₹50</span>
+    </div>
+</li>
+<li>
+    <img src="cheese_maggi.jpg" alt="Cheese Maggi">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Cheese Maggi</h4>
+        <p style="color: var(--silver);">Maggi noodles with a generous topping of cheese.</p>
+        <span class="price" style="color: var(--van-dyke);">₹60</span>
+    </div>
+</li>
+<li>
+    <img src="tandoori_cheese_maggi.jpg" alt="Tandoori Cheese Maggi">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Tandoori Cheese Maggi</h4>
+        <p style="color: var(--silver);">Maggi noodles with tandoori-spiced cheese.</p>
+        <span class="price" style="color: var(--van-dyke);">₹65</span>
+    </div>
+</li>
+<li>
+    <img src="schezwan_cheese_maggi.jpg" alt="Schezwan Cheese Maggi">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Schezwan Cheese Maggi</h4>
+        <p style="color: var(--silver);">Maggi noodles with a spicy Schezwan and cheese combo.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+<li>
+    <img src="corn_cheese_maggi.jpg" alt="Corn Cheese Maggi">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Corn Cheese Maggi</h4>
+        <p style="color: var(--silver);">Maggi noodles with sweet corn and cheese.</p>
+        <span class="price" style="color: var(--van-dyke);">₹80</span>
+    </div>
+</li>
+<li>
+    <img src="spicy_green_chilli_maggi.jpg" alt="Spicy Green Chilli Maggi">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Spicy Green Chilli Maggi</h4>
+        <p style="color: var(--silver);">Maggi noodles with a kick of spicy green chillies.</p>
+        <span class="price" style="color: var(--van-dyke);">₹60</span>
+    </div>
+</li>
+      
+    </ul>
+</div>
+
+<div class="menu-section" id="south-indian">
+    <h3 class="head-dish" onclick="showMenu('south-indian-menu')">
+        <img src="https://i.imgur.com/yU0MxXW.png" alt="South Indian Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">South Indian</span>
+    </h3>
+    <ul class="sub-dishes" id="south-indian-menu">
+        <!-- Add South Indian dishes here -->
+<li>
+    <img src="masala_dosa.jpg" alt="Masala Dosa">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Masala Dosa</h4>
+        <p style="color: var(--silver);">Dosa filled with flavorful masala.</p>
+        <span class="price" style="color: var(--van-dyke);">₹60</span>
+    </div>
+</li>
+
+<li>
+    <img src="masala_cheese_dosa.jpg" alt="Masala Cheese Dosa">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Masala Cheese Dosa</h4>
+        <p style="color: var(--silver);">Dosa topped with masala and gooey cheese.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<li>
+    <img src="tandoori_paneer_dosa.jpg" alt="Tandoori Paneer Dosa">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Tandoori Paneer Dosa</h4>
+        <p style="color: var(--silver);">Dosa filled with tandoori-flavored paneer.</p>
+        <span class="price" style="color: var(--van-dyke);">₹80</span>
+    </div>
+</li>
+
+<li>
+    <img src="mysore_dosa.jpg" alt="Mysore Dosa">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Mysore Dosa</h4>
+        <p style="color: var(--silver);">Dosa with a spicy and tangy mysore chutney.</p>
+        <span class="price" style="color: var(--van-dyke);">₹100</span>
+    </div>
+</li>
+
+<li>
+    <img src="pizza_dosa.jpg" alt="Pizza Dosa">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Pizza Dosa</h4>
+        <p style="color: var(--silver);">Dosa with pizza toppings for a fusion delight.</p>
+        <span class="price" style="color: var(--van-dyke);">₹130</span>
+    </div>
+</li>
+      
+    </ul>
+</div>
+
+<div class="menu-section" id="cold-coffee">
+    <h3 class="head-dish" onclick="showMenu('cold-coffee-menu')">
+        <img src="https://i.imgur.com/RNK0VTX.png" alt="Cold Coffee Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">Cold Coffee</span>
+    </h3>
+    <ul class="sub-dishes" id="cold-coffee-menu">
+        <!-- Add Cold Coffee dishes here -->
+<li>
+    <img src="classic_cold_coffee.jpg" alt="Classic Cold Coffee">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Classic Cold Coffee</h4>
+        <p style="color: var(--silver);">The classic cold coffee for coffee lovers.</p>
+        <span class="price" style="color: var(--van-dyke);">₹65</span>
+    </div>
+</li>
+
+<li>
+    <img src="chocolate_cold_coffee.jpg" alt="Chocolate Cold Coffee">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Chocolate Cold Coffee</h4>
+        <p style="color: var(--silver);">Cold coffee with a rich chocolatey flavor.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<li>
+    <img src="cold_coffee_with_ice_cream.jpg" alt="Cold Coffee W/t Ice Cream">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Cold Coffee W/t Ice Cream</h4>
+        <p style="color: var(--silver);">Cold coffee served with a scoop of ice cream for extra delight.</p>
+        <span class="price" style="color: var(--van-dyke);">₹80</span>
+    </div>
+</li>
+
+<li>
+    <img src="shyamli_special_cold_coffee.jpg" alt="Shyamli Special Cold Coffee">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Shyamli Special Cold Coffee</h4>
+        <p style="color: var(--silver);">Our special blend of cold coffee for a unique taste.</p>
+        <span class="price" style="color: var(--van-dyke);">₹100</span>
+    </div>
+</li>
+      
+    </ul>
+</div>
+
+<div class="menu-section" id="shakes">
+    <h3 class="head-dish" onclick="showMenu('shakes-menu')">
+        <img src="https://i.imgur.com/R9wAAy7.png" alt="Shake Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">Shakes</span>
+    </h3>
+    <ul class="sub-dishes" id="shakes-menu">
+        <!-- Add Shake dishes here -->
+<li>
+    <img src="oreo_shake.jpg" alt="Oreo Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Oreo Shake</h4>
+        <p style="color: var(--silver);">Creamy shake with the delicious flavor of Oreo cookies.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<li>
+    <img src="chocolate_shake.jpg" alt="Chocolate Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Chocolate Shake</h4>
+        <p style="color: var(--silver);">Rich and chocolaty shake for chocolate lovers.</p>
+        <span class="price" style="color: var(--van-dyke);">₹80</span>
+    </div>
+</li>
+
+<li>
+    <img src="butterscotch_shake.jpg" alt="Butter Scotch Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Butter Scotch Shake</h4>
+        <p style="color: var(--silver);">Smooth shake with the classic flavor of butterscotch.</p>
+        <span class="price" style="color: var(--van-dyke);">₹80</span>
+    </div>
+</li>
+
+<li>
+    <img src="kitkat_shake.jpg" alt="Kitkat Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Kitkat Shake</h4>
+        <p style="color: var(--silver);">Shake featuring the crunch of Kitkat chocolate.</p>
+        <span class="price" style="color: var(--van-dyke);">₹90</span>
+    </div>
+</li>
+
+<li>
+    <img src="choco_chips_shake.jpg" alt="Choco Chips Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Choco Chips Shake</h4>
+        <p style="color: var(--silver);">Shake with delightful choco chips for added texture.</p>
+        <span class="price" style="color: var(--van-dyke);">₹90</span>
+    </div>
+</li>
+
+<li>
+    <img src="paan_shake.jpg" alt="Paan Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Paan Shake</h4>
+        <p style="color: var(--silver);">Unique shake infused with the flavors of paan.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<li>
+    <img src="blueberry_shake.jpg" alt="Blue Berry Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Blue Berry Shake</h4>
+        <p style="color: var(--silver);">Refreshing shake with the goodness of blueberries.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<li>
+    <img src="rose_shake.jpg" alt="Rose Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Rose Shake</h4>
+        <p style="color: var(--silver);">Exquisite shake featuring the floral essence of rose.</p>
+        <span class="price" style="color: var(--van-dyke);">₹80</span>
+    </div>
+</li>
+
+<li>
+    <img src="brownie_shake.jpg" alt="Brownie Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Brownie Shake</h4>
+        <p style="color: var(--silver);">Indulgent shake with chunks of delicious brownie.</p>
+        <span class="price" style="color: var(--van-dyke);">₹90</span>
+    </div>
+</li>
+
+<li>
+    <img src="strawberry_shake.jpg" alt="Strawberry Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Strawberry Shake</h4>
+        <p style="color: var(--silver);">Sweet and fruity shake featuring juicy strawberries.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<li>
+    <img src="nutella_shake.jpg" alt="Nutella Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Nutella Shake</h4>
+        <p style="color: var(--silver);">Irresistible shake with the rich taste of Nutella.</p>
+        <span class="price" style="color: var(--van-dyke);">₹100</span>
+    </div>
+</li>
+
+<li>
+    <img src="blackcurrant_shake.jpg" alt="Black Current Shake">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Black Current Shake</h4>
+        <p style="color: var(--silver);">Luscious shake featuring the flavor of blackcurrants.</p>
+        <span class="price" style="color: var(--van-dyke);">₹90</span>
+    </div>
+</li>
+      
+    </ul>
+</div>
+
+<div class="menu-section" id="others">
+    <h3 class="head-dish" onclick="showMenu('others-menu')">
+        <img src="https://i.imgur.com/8xq9JNu.png" alt="Others Icon" style="height: 75px; margin-right: 10px;">
+        <span class="head-dish-text">Others</span>
+    </h3>
+    <ul class="sub-dishes" id="others-menu">
+        <!-- Add Other dishes here -->
+<!-- Bake Samosa (Patties) -->
+<li>
+    <img src="bake_samosa_patties.jpg" alt="Bake Samosa (Patties)">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Bake Samosa (Patties)</h4>
+        <p style="color: var(--silver);">Delicious baked samosa patties.</p>
+        <span class="price" style="color: var(--van-dyke);">₹35</span>
+    </div>
+</li>
+
+<!-- Indori Khopra Patties -->
+<li>
+    <img src="indori_khopra_patties.jpg" alt="Indori Khopra Patties">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Indori Khopra Patties</h4>
+        <p style="color: var(--silver);">Specialty patties with coconut filling, inspired by Indori flavors.</p>
+        <span class="price" style="color: var(--van-dyke);">₹30</span>
+    </div>
+</li>
+
+<!-- Katori Chat -->
+<li>
+    <img src="katori_chat.jpg" alt="Katori Chat">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Katori Chat</h4>
+        <p style="color: var(--silver);">Chat served in edible katoris for a delightful experience.</p>
+        <span class="price" style="color: var(--van-dyke);">₹40</span>
+    </div>
+</li>
+
+<!-- Pav Bhaji -->
+<li>
+    <img src="pav_bhaji.jpg" alt="Pav Bhaji">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Pav Bhaji</h4>
+        <p style="color: var(--silver);">A popular Indian street food featuring a spicy vegetable curry served with pav.</p>
+        <span class="price" style="color: var(--van-dyke);">₹50</span>
+    </div>
+</li>
+
+<!-- Cheese Stuffed Bun -->
+<li>
+    <img src="cheese_stuffed_bun.jpg" alt="Cheese Stuffed Bun">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Cheese Stuffed Bun</h4>
+        <p style="color: var(--silver);">Soft and fluffy buns stuffed with gooey cheese.</p>
+        <span class="price" style="color: var(--van-dyke);">₹70</span>
+    </div>
+</li>
+
+<!-- Pastries -->
+<li>
+    <img src="pastries.jpg" alt="Pastries">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Pastries</h4>
+        <p style="color: var(--silver);">Assorted pastries for a sweet treat.</p>
+        <span class="price" style="color: var(--van-dyke);">As per the price</span>
+    </div>
+</li>
+
+<!-- Cold Drinks -->
+<li>
+    <img src="cold_drinks.jpg" alt="Cold Drinks">
+    <div class="item-details">
+        <h4 style="color: var(--van-dyke);">Cold Drinks</h4>
+        <p style="color: var(--silver);">Refreshing cold drinks to quench your thirst.</p>
+        <span class="price" style="color: var(--van-dyke);">As per the price</span>
+    </div>
+</li>
+      
+    </ul>
+</div>
+
+        </main>
+                <div class="ribbon">Cakes are Available on orders</div>
+        <footer class="menu-card-footer">
+
+             <p style="color: var(--silver);"><a href="https://shyamli.my.canva.site/abir-gupta" target="_blank">Made with 💝 by CHRE</p>
+               <div class="call-me">
+        <p style="color: var(--silver);"> Call me: <a href="tel:+9413322468" style="color: var(--silver);">9413322468</a></p>
+    </div>
+        </footer>
+    </div>
+         </div>
+<script>
+  scr="script.js"
+</script>
+</body>
+</html>

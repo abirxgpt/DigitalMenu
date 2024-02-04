@@ -2,6 +2,10 @@
 
 Welcome to the Shyamli Cafeteria Menu repository! This repository contains the digital menu card for Shyamli Cafeteria.
 
+![GitHub last commit](https://img.shields.io/github/last-commit/abirxgpt/Digital-Menu?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/abirxgpt/Digital-Menu?style=flat-square)
+![GitHub](https://img.shields.io/github/license/abirxgpt/Digital-Menu?style=flat-square)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Demo](#demo)

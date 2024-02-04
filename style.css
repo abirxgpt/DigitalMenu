@@ -2,6 +2,7 @@
     font-family: 'Roboto', sans-serif;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: auto;
     margin: 20px auto;
     padding: 20px;
     background-image: url('https://images.unsplash.com/photo-1616362258782-7511b61686ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -25,6 +26,7 @@ main.menu-card-body {
     border-radius: 10px; /* Match the border-radius of the menu card */
     padding: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: auto;
 
     background: rgba(255, 255, 255, 0.10);
     border-radius: 16px;
@@ -81,7 +83,6 @@ header.menu-card-header h2 {
     background-image: url('https://images.unsplash.com/photo-1635315619556-5826839a1bea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;    
-    width: auto;
 }
 
 .menu-section:hover {
@@ -160,6 +161,7 @@ header.menu-card-header h2 {
 .head-dish {
     display: flex;
     align-items: center;
+    width: auto;
 }
 
 .head-dish-text {

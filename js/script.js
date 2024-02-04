@@ -20,3 +20,8 @@ function toggleSubDishes(subDishes) {
         }
     });
 }
+// Your JavaScript code goes here
+document.addEventListener('DOMContentLoaded', function () {
+    // Your code to be executed after the DOM is ready
+    console.log('DOM is ready!');
+});

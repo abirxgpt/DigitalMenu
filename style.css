@@ -1,0 +1,229 @@
+.menu-card {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 850px;
+    background-image: url('https://images.unsplash.com/photo-1616362258782-7511b61686ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-color: var(--antique-white);
+    color: #000;
+    border: 2px solid #000000; /* Add this line to apply border */
+
+    
+    /* Your palette color */
+    --van-dyke: #F8E1E7;
+    --silver: #C7C4BF;
+    --antique-white: #FAEBD7;
+}
+
+/* Style the menu card body */
+main.menu-card-body {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    background-color: var(--antique-white); /* Add background color to the menu card body */
+    border-radius: 10px; /* Match the border-radius of the menu card */
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+
+}
+
+
+header.menu-card-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:2 ;
+}
+
+header.menu-card-header img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+ header.menu-card-header h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #FAEBD7;
+    text-shadow: 10px 10px 40px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+ 
+header.menu-card-header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #FAEBD7;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+/* Updated Style the menu card body */
+/* Style the menu card body */
+
+
+.menu-section {
+    border-radius: 10px; /* Increased border-radius for a more rounded appearance */
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow for a 3D effect */
+    transition: transform 0.3s ease-in-out; /* Added a transition for a smooth transformation on hover */
+    border: 1px solid var(--silver); /* Added a border for visual separation */
+    background-image: url('https://images.unsplash.com/photo-1635315619556-5826839a1bea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;    
+
+}
+
+.menu-section:hover {
+    transform: scale(1.00); /* Slightly scale up on hover for a 3D effect */
+}
+
+.menu-section h3 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FAEBD7; /* Adjusted the color for better contrast */
+    cursor: pointer;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    margin: 0;
+    gap: 20px;
+}
+
+.menu-section li {
+    display: flex;
+    flex-direction: column; /* Display each dish in a separate column */
+    align-items: center;
+    margin-bottom: 15px;
+    flex: 0 0 auto;
+    max-width: calc((100% - 20px * 2) / 2);
+}
+
+.menu-section li img {
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-section .item-details {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    width: 250px;
+    height: 150px;
+
+}
+
+.menu-section .item-details h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--van-dyke); /* Adjusted the color for better contrast */
+}
+
+.menu-section .item-details p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: var(--van-dyke); /* Adjusted the color for better contrast */
+}
+
+.menu-section .price {
+    font-weight: bold;
+    color: var(--van-dyke); /* Adjusted the color for better contrast */
+}
+
+.menu-container {
+    position: relative;
+    overflow: hidden; /* Add this line to hide overflowing content */
+
+}
+
+.head-dish {
+    display: flex;
+    align-items: center;
+}
+
+.head-dish-text {
+    font-family: 'Kalam', cursive;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sub-dishes.collapsed {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.sub-dishes {
+    display: none;
+}
+
+.sub-dishes.collapsed {
+    display: block;
+}
+
+.menu-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu-card-footer p {
+    margin: 0;
+}
+
+.menu-card-footer a {
+    color: var(--silver);
+    text-decoration: none;
+}
+
+.menu-card-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Add animation for scrolling ribbon */
+@keyframes ribbonMove {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Apply the animation to the ribbon */
+
+.garland {
+    position: absolute;
+    top: 20px; /* Adjust the distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.garland-image {
+    width: 890px; /* Adjust the width of the garland image */
+    height: auto;
+}

@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <style>
   @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&family=Satisfy&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+         @media only screen and (max-width: 768px) {
+        .menu-card-header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .menu-card-header h1, .menu-card-header h2 {
+            margin-top: 10px;
+        }
+
+        .head-dish img {
+            max-height: 40px;
+        }
+
+        /* Add more media query styles as needed */
+    }
     </style>
 </head>
 <body>

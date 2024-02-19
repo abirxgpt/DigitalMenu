@@ -80,7 +80,7 @@ header.menu-card-header h2 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow for a 3D effect */
     transition: transform 0.3s ease-in-out; /* Added a transition for a smooth transformation on hover */
     border: 1px solid var(--silver); /* Added a border for visual separation */
-    background-image: url('https://images.unsplash.com/photo-1635315619556-5826839a1bea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1545486332-9e0999c535b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDgzNDAxNzl8&ixlib=rb-4.0.3&q=85');
     background-size: cover;
     background-position: center;    
 }

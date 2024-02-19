@@ -229,4 +229,51 @@ header.menu-card-header h2 {
     height: auto;
 }
 
+/* Add this CSS at the end of your style.css file */
+
+/* Mobile Styles */
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+    .menu-card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .menu-card-header img {
+        width: 150px; /* Reduce the size of the logo */
+        height: 150px;
+        margin-right: 0; /* Remove margin */
+    }
+    
+    .menu-card-header h1, .menu-card-header h2 {
+        margin: 5px 0; /* Add margin for spacing */
+    }
+    
+    .head-dish {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .head-dish img {
+        height: 50px; /* Reduce the size of dish icons */
+        margin-right: 5px; /* Adjust margin */
+    }
+    
+    .menu-section ul.sub-dishes {
+        padding-left: 0; /* Remove default padding */
+    }
+    
+    .menu-section ul.sub-dishes li {
+        margin-bottom: 20px; /* Add margin between items */
+    }
+    
+    .item-details {
+        padding-left: 70px; /* Adjust spacing */
+        text-align: left; /* Align text left */
+    }
+}
 

@@ -25,3 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Your code to be executed after the DOM is ready
     console.log('DOM is ready!');
 });
+
+ // Set viewport width for desktop site mode
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            var viewport = document.querySelector("meta[name=viewport]");
+            viewport.setAttribute('content', 'width=1024');
+        }
